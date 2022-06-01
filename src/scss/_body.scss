@@ -1,0 +1,22 @@
+$primary-color: #00bcd4;
+$secondary-color: #fafafa;
+$RED: #f44336;
+
+@mixin transition {
+  transition: all 0.3s ease;
+  background-color: $secondary-color;
+  color: $RED;
+}
+
+body {
+  background: $primary-color;
+  color: $secondary-color;
+  &:hover {
+    @include transition;
+  }
+}
+
+p {
+  color: black;
+  font-size: 2rem;
+}
